@@ -46,7 +46,7 @@ public class Main {
                String value = record.value();
                int first_comma = value.indexOf(comma);
                Double lng = Double.parseDouble(value.substring(0, first_comma));
-               Double lat = Double.parseDouble(value.substring(first_comma, value.indexOf(comma, first_comma +1 )));
+               Double lat = Double.parseDouble(value.substring(first_comma + 1, value.indexOf(comma, first_comma +1 )));
                String hash = Generator.generateGeoHash(lat, lng);
                StringBuilder builder = new StringBuilder();
                builder.append(value).append(comma).append(hash);
