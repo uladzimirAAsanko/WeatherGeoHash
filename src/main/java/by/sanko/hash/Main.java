@@ -19,7 +19,7 @@ import org.apache.kafka.common.serialization.StringSerializer;
 public class Main {
     private static final String CONNECTION = "host.docker.internal:9094";
     private static final String CONSUMER_GROUP = "KafkaExampleConsumer";
-    private static final String SUBSCRIBE_TOPIC = "weather-data";
+    private static final String SUBSCRIBE_TOPIC = "weathers-data";
     private static final String OUTPUT_TOPIC = "weather-data-hash";
     static Consumer<String, String> consumer = null;
     static Producer<String, String> producer = null;
